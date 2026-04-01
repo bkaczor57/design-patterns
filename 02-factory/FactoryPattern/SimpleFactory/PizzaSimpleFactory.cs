@@ -2,7 +2,25 @@
 
 namespace FactoryPattern.SimpleFactory;
 
-public class CheesePizza : SimplePizza
+public abstract class Pizza
+{
+    public String Name {get;set;} = String.Empty;
+    public String Dough {get;set;} = String.Empty;
+    public String Sauce {get;set;} = String.Empty;
+    public List<string> Toppings { get; protected set; } = [];
+    public  void Prepare()
+    {
+        Console.WriteLine($"Nazwa: {Name}");
+        Console.WriteLine($"Ciasto: {Dough}");
+        Console.WriteLine($"Sos: {Sauce}");
+        Console.WriteLine($"Dodatki: {string.Join(", ",Toppings)}");
+    }
+    public void Bake() => Console.WriteLine($"Pieczenie {Name}");
+    public void Cut() => Console.WriteLine($"Krojenie {Name}");
+}
+
+
+public class CheesePizza : Pizza
 {
     public CheesePizza()
     {
@@ -13,7 +31,7 @@ public class CheesePizza : SimplePizza
     }
 }
 
-public class PepperoniPizza: SimplePizza
+public class PepperoniPizza: Pizza
 {
     public PepperoniPizza()
     {
@@ -26,7 +44,7 @@ public class PepperoniPizza: SimplePizza
 
 public class PizzaSimpleFactory
 {
-    public SimplePizza? CreatePizza(String type)
+    public Pizza? CreatePizza(String type)
     {
         switch (type.ToLower())
         {
@@ -50,7 +68,7 @@ public class PizzaSimpleStore
         _pizzaFactory = pizzaFactory;
     }
 
-    public SimplePizza? OrderPizza(string value)
+    public Pizza? OrderPizza(string value)
     {
         var pizza = _pizzaFactory.CreatePizza(value);
         if(pizza is null)

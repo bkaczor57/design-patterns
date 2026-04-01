@@ -4,13 +4,30 @@ using FactoryPattern.SimpleFactory;
 namespace FactoryPattern.FactoryMethod;
 
 
+public abstract class Pizza
+{
+    public String Name {get;set;} = String.Empty;
+    public String Dough {get;set;} = String.Empty;
+    public String Sauce {get;set;} = String.Empty;
+    public List<string> Toppings { get; protected set; } = [];
+    public virtual void Prepare()
+    {
+        Console.WriteLine($"Nazwa: {Name}");
+        Console.WriteLine($"Ciasto: {Dough}");
+        Console.WriteLine($"Sos: {Sauce}");
+        Console.WriteLine($"Dodatki: {string.Join(", ",Toppings)}");
+    }
+    public virtual void Bake() => Console.WriteLine($"Pieczenie {Name}");
+    public virtual void Cut() => Console.WriteLine($"Krojenie {Name}");
+}
+
 public abstract class PizzaStore
 {
     // Metoda wytwórcza - dzięki temu tu nic nie zmieniamy
-    protected abstract FactoryMethodPizza CreatePizza(string type);
+    protected abstract Pizza CreatePizza(string type);
 
     // pizza jest już wybrana w PizzaStore nic już nie zmieniamy
-    public FactoryMethodPizza OrderPizza(string type)
+    public Pizza OrderPizza(string type)
     {
         var pizza = CreatePizza(type);
         pizza.Prepare();
@@ -26,7 +43,7 @@ public abstract class PizzaStore
 // Pokazuje to że wystarczy dorobić nową metodę która overriduje CreatePizza i wykorzystuje własne rozwiązania
 public class NewYorkPizzaStore : PizzaStore
 {
-    protected override FactoryMethodPizza CreatePizza(string type) => type.ToLower() switch
+    protected override Pizza CreatePizza(string type) => type.ToLower() switch
     {
         "cheese" => new NYCheesePizza(),
         "pepperoni" => new NYPepperoniPizza(),
@@ -36,7 +53,7 @@ public class NewYorkPizzaStore : PizzaStore
 }
 public class ChicagoPizzaStore : PizzaStore
 {
-    protected override FactoryMethodPizza CreatePizza(string type) => type.ToLower() switch
+    protected override Pizza CreatePizza(string type) => type.ToLower() switch
     {
         "cheese" => new ChicagoCheesePizza(),
         "pepperoni" => new ChicagoPepperoniPizza(),
@@ -47,7 +64,7 @@ public class ChicagoPizzaStore : PizzaStore
 
 
 
-public class NYCheesePizza : FactoryMethodPizza
+public class NYCheesePizza : Pizza
 {
     public NYCheesePizza()
     {
@@ -61,7 +78,7 @@ public class NYCheesePizza : FactoryMethodPizza
 
 }
 
-public class NYPepperoniPizza: FactoryMethodPizza
+public class NYPepperoniPizza: Pizza
 {    public NYPepperoniPizza()
     {
         Name = "New York Pepperoni Pizza";
@@ -74,11 +91,11 @@ public class NYPepperoniPizza: FactoryMethodPizza
     
 }
 
-public class ChicagoCheesePizza : FactoryMethodPizza
+public class ChicagoCheesePizza : Pizza
 {
     public ChicagoCheesePizza()
     {
-        Name = "New York Cheese Pizza";
+        Name = "Chicago Cheese Pizza";
         Dough = "Grube";
         Sauce = "Pomidorowy";
         Toppings = ["Ser Mozarella"];
@@ -88,7 +105,7 @@ public class ChicagoCheesePizza : FactoryMethodPizza
 
 }
 
-public class ChicagoPepperoniPizza: FactoryMethodPizza
+public class ChicagoPepperoniPizza: Pizza
 {    public ChicagoPepperoniPizza()
     {
         Name = "Chicago Pepperoni Pizza";
