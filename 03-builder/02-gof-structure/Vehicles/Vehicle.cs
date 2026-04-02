@@ -45,7 +45,9 @@ public class MotorBuilder : IBuilder
 
 }
 
-
+/*
+Dyrektorzy są ważni gdy potrzebujemy odpowiednią kolejność wywołania obiektu
+*/
 public class Director
 {
     private readonly IBuilder _builder;

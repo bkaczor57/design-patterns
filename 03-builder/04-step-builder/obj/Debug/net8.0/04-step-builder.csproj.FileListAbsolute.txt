@@ -1,0 +1,15 @@
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.AssemblyInfoInputs.cache
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.AssemblyInfo.cs
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.csproj.CoreCompileInputs.cache
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.sourcelink.json
+/home/user/design-patterns/03-builder/04-step-builder/bin/Debug/net8.0/04-step-builder
+/home/user/design-patterns/03-builder/04-step-builder/bin/Debug/net8.0/04-step-builder.deps.json
+/home/user/design-patterns/03-builder/04-step-builder/bin/Debug/net8.0/04-step-builder.runtimeconfig.json
+/home/user/design-patterns/03-builder/04-step-builder/bin/Debug/net8.0/04-step-builder.dll
+/home/user/design-patterns/03-builder/04-step-builder/bin/Debug/net8.0/04-step-builder.pdb
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.dll
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/refint/04-step-builder.dll
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.pdb
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/04-step-builder.genruntimeconfig.cache
+/home/user/design-patterns/03-builder/04-step-builder/obj/Debug/net8.0/ref/04-step-builder.dll
