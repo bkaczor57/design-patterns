@@ -61,7 +61,24 @@ public class Email
             if (_email.To.Count == 0)
                 throw new InvalidOperationException("Wymagany co najmniej jeden odbiorca 'To'.");
 
-            return _email;
+            return new Email
+            {
+                From = _email.From,
+                To = new List<String>(_email.To),
+                Cc = new List<String>(_email.Cc),
+                Subject = _email.Subject,
+                Body = _email.Body
+            };
         }
+
+        public void Reset()
+        {
+            _email.From = null;
+            _email.To = new List<String>();
+            _email.Cc = new List<String>();
+            _email.Subject = null;
+            _email.Body = null;
+        }
+
     }
 }

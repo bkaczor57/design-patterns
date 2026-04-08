@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("04-step-builder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac081b877f5307c5b2d365097c53d1ead5f80e52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e11a079147bb36666e39160e6c1ce76ec787a490")]
 [assembly: System.Reflection.AssemblyProductAttribute("04-step-builder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("04-step-builder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

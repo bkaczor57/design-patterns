@@ -21,7 +21,10 @@ Console.WriteLine(emp2);
 Console.WriteLine();
 
 // --- Email Builder ---
-var email = new Email.Builder()
+
+var emailBuilder = new Email.Builder();
+
+var email = emailBuilder
     .From("nadawca@firma.pl")
     .To("jan@firma.pl", "anna@firma.pl")
     .Cc("manager@firma.pl", "hr@firma.pl")
@@ -29,4 +32,15 @@ var email = new Email.Builder()
     .Body("Przypominam o spotkaniu w piątek o 10:00.")
     .Build();
 
+emailBuilder.Reset();
+
+var email2 = emailBuilder
+    .From("odbiorca@firma.pl")
+    .To("pawel@firma.pl", "grzegorz@firma.pl")
+    .Cc("prezes@firma.pl", "it@firma.pl")
+    .Subject("Spotkanie w czwartek")
+    .Body("Przypominam o spotkaniu w czwartek o 17:00.")
+    .Build();
+
 email.Print();
+email2.Print();

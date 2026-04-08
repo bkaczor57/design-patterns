@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+mg8NhvNrZYpI4Z6/d7emWaSeCzgWtQIqBWOzlYPo1cqXjLqUoSJsvMLasn6xM3pAHTq3IHW4i4mzuVZCGMBWA==",
+  "dgSpecHash": "JhkbEfZFqso=",
   "success": true,
-  "projectFilePath": "/home/user/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj",
+  "projectFilePath": "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

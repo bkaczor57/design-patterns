@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-fluent-builder", "03-flu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-step-builder", "04-step-builder\04-step-builder.csproj", "{4F28DC07-4DAB-4E41-AD4C-CC18CC02F964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{AEDF6E8B-06B1-4BF6-86A3-8A86A6745220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{4F28DC07-4DAB-4E41-AD4C-CC18CC02F964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F28DC07-4DAB-4E41-AD4C-CC18CC02F964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F28DC07-4DAB-4E41-AD4C-CC18CC02F964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDF6E8B-06B1-4BF6-86A3-8A86A6745220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDF6E8B-06B1-4BF6-86A3-8A86A6745220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDF6E8B-06B1-4BF6-86A3-8A86A6745220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDF6E8B-06B1-4BF6-86A3-8A86A6745220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

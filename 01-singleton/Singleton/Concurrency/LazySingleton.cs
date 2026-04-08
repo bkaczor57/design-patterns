@@ -19,4 +19,6 @@ public sealed class LazySingleton
     {
         Id = Guid.NewGuid();
     }
+    
+
 }

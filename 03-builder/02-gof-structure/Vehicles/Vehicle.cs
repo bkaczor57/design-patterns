@@ -1,4 +1,4 @@
-using System;
+    using System;
 
 namespace GOFStructure.Vehicles;
 
@@ -9,6 +9,7 @@ public class Vehicle
 
     public Vehicle(string vehicleType) => _vehicleType = vehicleType;
 
+    public IReadOnlyList<string> Parts => _parts;
     public void AddPart(string part) => _parts.Add(part);
     public void Show()
     {
@@ -45,6 +46,18 @@ public class MotorBuilder : IBuilder
 
 }
 
+public class TruckBuilder: IBuilder
+{
+    private Vehicle _vehicle;
+    public TruckBuilder() => _vehicle = new Vehicle("Truck");
+    public void BuildFrame()=> _vehicle.AddPart("Ladder Frame - Reinforced Steel");
+    public void BuildEngine() => _vehicle.AddPart("6.7L Diesel 400 KM");
+    public void BuildWheels() => _vehicle.AddPart("6 x 315");
+
+    public Vehicle GetResult() => _vehicle;
+    
+}
+
 /*
 Dyrektorzy są ważni gdy potrzebujemy odpowiednią kolejność wywołania obiektu
 */
@@ -69,7 +82,7 @@ public class ArgumentDirector
     public void Construct(IBuilder builder)
     {
         builder.BuildFrame();
-        builder.BuildFrame();
-        builder.BuildFrame();
+        builder.BuildEngine();
+        builder.BuildWheels();
     }
 }

@@ -1,0 +1,329 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/bkacz/projects/design-patterns/03-builder/Tests/Tests.csproj": {}
+  },
+  "projects": {
+    "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj",
+        "projectName": "01-construction-problem",
+        "projectPath": "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj",
+        "packagesPath": "/home/bkacz/.nuget/packages/",
+        "outputPath": "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bkacz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
+        "projectName": "02-gof-structure",
+        "projectPath": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
+        "packagesPath": "/home/bkacz/.nuget/packages/",
+        "outputPath": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bkacz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/03-fluent-builder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/03-fluent-builder.csproj",
+        "projectName": "03-fluent-builder",
+        "projectPath": "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/03-fluent-builder.csproj",
+        "packagesPath": "/home/bkacz/.nuget/packages/",
+        "outputPath": "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bkacz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/04-step-builder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/04-step-builder.csproj",
+        "projectName": "04-step-builder",
+        "projectPath": "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/04-step-builder.csproj",
+        "packagesPath": "/home/bkacz/.nuget/packages/",
+        "outputPath": "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bkacz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bkacz/projects/design-patterns/03-builder/Tests/Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/Tests/Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/home/bkacz/projects/design-patterns/03-builder/Tests/Tests.csproj",
+        "packagesPath": "/home/bkacz/.nuget/packages/",
+        "outputPath": "/home/bkacz/projects/design-patterns/03-builder/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bkacz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj": {
+                "projectPath": "/home/bkacz/projects/design-patterns/03-builder/01-construction-problem/01-construction-problem.csproj"
+              },
+              "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj": {
+                "projectPath": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj"
+              },
+              "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/03-fluent-builder.csproj": {
+                "projectPath": "/home/bkacz/projects/design-patterns/03-builder/03-fluent-builder/03-fluent-builder.csproj"
+              },
+              "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/04-step-builder.csproj": {
+                "projectPath": "/home/bkacz/projects/design-patterns/03-builder/04-step-builder/04-step-builder.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

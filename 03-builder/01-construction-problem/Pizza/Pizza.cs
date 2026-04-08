@@ -54,6 +54,7 @@ public sealed class Pizza
 {
     public string Size { get; }
     public bool Cheese { get; }
+    public bool ExtraCheese {get;}
     public bool Pepperoni { get; }
     public bool Bacon { get; }
     public bool Mushrooms { get; }
@@ -63,6 +64,7 @@ public sealed class Pizza
     {
         Size = b.Size;
         Cheese = b.Cheese;
+        ExtraCheese = b.ExtraCheese;
         Pepperoni = b.Pepperoni;
         Bacon = b.Bacon;
         Mushrooms = b.Mushrooms;
@@ -78,6 +80,7 @@ public sealed class Pizza
     {
         public string Size { get; }
         public bool Cheese { get; private set; }
+        public bool ExtraCheese {get; private set;}
         public bool Pepperoni { get; private set; }
         public bool Bacon { get; private set; }
         public bool Mushrooms { get; private set; }
@@ -96,7 +99,16 @@ public sealed class Pizza
         public Builder WithMushrooms() { Mushrooms = true; return this; }
         public Builder WithOnions()    { Onions    = true; return this; }
 
-        public Pizza Build() => new Pizza(this);
+        public Builder WithExtraCheese() {ExtraCheese = true; return this;}
+
+        public Pizza Build() 
+        {
+            if(!Cheese && ExtraCheese)
+            {
+                throw new InvalidOperationException("Cannot add Extra Cheese without base Cheese");
+            }
+            return new Pizza(this);
+        }
     }
 
     

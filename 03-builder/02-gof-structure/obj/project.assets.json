@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/user/.nuget/packages/": {}
+    "/home/bkacz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
+      "projectUniqueName": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
       "projectName": "02-gof-structure",
-      "projectPath": "/home/user/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
-      "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/design-patterns/03-builder/02-gof-structure/obj/",
+      "projectPath": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/02-gof-structure.csproj",
+      "packagesPath": "/home/bkacz/.nuget/packages/",
+      "outputPath": "/home/bkacz/projects/design-patterns/03-builder/02-gof-structure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/user/.nuget/NuGet/NuGet.Config"
+        "/home/bkacz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
